@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+  <title>My Portfolio</title> <!-- Page title -->
+
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Body styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    /* Navigation bar */
+    nav {
+      background: #222;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    /* Navigation links */
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    /* Hover effect for nav links */
+    nav a:hover {
+      color: orange;
+    }
+
+    /* Section common styling */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1s ease;
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #222, #444);
+      color: white;
+    }
+
+    /* Hero title */
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    /* Hero subtitle */
+    .hero p {
+      font-size: 20px;
+    }
+
+    /* Section titles */
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    /* About text */
+    .about p {
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    /* Skills container */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    /* Skill item */
+    .skill {
+      background: #222;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    /* Skill hover */
+    .skill:hover {
+      background: orange;
+      transform: scale(1.05);
+    }
+
+    /* Projects container */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* Project card */
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    /* Project hover */
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    /* Resume button */
+    .resume-btn {
+      display: block;
+      width: fit-content;
+      margin: auto;
+      padding: 12px 20px;
+      background: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    /* Resume button hover */
+    .resume-btn:hover {
+      background: orange;
+    }
+
+    /* Contact section */
+    .contact p {
+      text-align: center;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    /* Fade animation */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <nav>
+    <a href="#about">About</a> <!-- About link -->
+    <a href="#skills">Skills</a> <!-- Skills link -->
+    <a href="#projects">Projects</a> <!-- Projects link -->
+    <a href="#resume">Resume</a> <!-- Resume link -->
+    <a href="#contact">Contact</a> <!-- Contact link -->
+  </nav>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <h1>Minakshi Baisane</h1> <!-- Your name -->
+    <p>Web Developer | Python Programmer | Computer Science Student</p> <!-- Your title -->
+  </section>
+
+  <!-- About section -->
+  <section id="about" class="about">
+    <h2>About Me</h2> <!-- Section title -->
+    <p>
+      Hello! I am Minakshi Baisane, a Computer Science student passionate about web development,
+      programming, and creating useful projects. I enjoy building simple and practical applications
+      using HTML, CSS, JavaScript, Python, Java, and C#.
+    </p>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills">
+    <h2>Skills</h2> <!-- Section title -->
+    <div class="skills-list">
+      <div class="skill">HTML</div> <!-- Skill -->
+      <div class="skill">CSS</div> <!-- Skill -->
+      <div class="skill">JavaScript</div> <!-- Skill -->
+      <div class="skill">Python</div> <!-- Skill -->
+      <div class="skill">Java</div> <!-- Skill -->
+      <div class="skill">C#</div> <!-- Skill -->
+      <div class="skill">MongoDB</div> <!-- Skill -->
+      <div class="skill">SQL</div> <!-- Skill -->
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects">
+    <h2>Projects</h2> <!-- Section title -->
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Hangman Game</h3> <!-- Project name -->
+        <p>A Python-based word guessing game with user interaction and simple logic.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Basic Chatbot</h3> <!-- Project name -->
+        <p>A rule-based chatbot that responds to user greetings and common messages.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Calculator</h3> <!-- Project name -->
+        <p>A basic calculator built using HTML, CSS, and JavaScript for arithmetic operations.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Stock Portfolio Tracker</h3> <!-- Project name -->
+        <p>A Python program to calculate total investment based on stock quantity and hardcoded prices.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>Web Scraper</h3> <!-- Project name -->
+        <p>A Python automation project to extract useful data from websites.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume section -->
+  <section id="resume">
+    <h2>Resume</h2> <!-- Section title -->
+    <a href="#" class="resume-btn">Download Resume</a> <!-- Resume button -->
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2> <!-- Section title -->
+    <p>Email: yourname@email.com</p> <!-- Email -->
+    <p>Phone: +91 XXXXXXXXXX</p> <!-- Phone -->
+    <p>LinkedIn: linkedin.com/in/yourprofile</p> <!-- LinkedIn -->
+    <p>GitHub: github.com/yourusername</p> <!-- GitHub -->
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Minakshi Baisane | Portfolio Website</p> <!-- Footer text -->
+  </footer>
+
+</body>
+</html>
